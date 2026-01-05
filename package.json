@@ -1,0 +1,17 @@
+{
+  "name": "abhishek-portfolio",
+  "private": true,
+  "scripts": {
+    "dev": "next dev",
+    "build": "next build",
+    "start": "next start"
+  },
+  "dependencies": {
+    "next": "latest",
+    "react": "latest",
+    "react-dom": "latest",
+    "framer-motion": "^10.0.0",
+    "mongoose": "^7.0.0",
+    "nodemailer": "^6.9.0"
+  }
+}
