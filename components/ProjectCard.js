@@ -1,15 +1,12 @@
-import Link from "next/link";
-import { motion } from "framer-motion";
-
-export default function ProjectCard({ id, year, title }) {
+export default function ProjectCard({ title, year, description, tech }) {
   return (
-    <motion.div whileHover={{ scale: 1.05 }}>
-      <Link href={`/projects/${id}`}>
-        <div style={{ padding: 20, borderRadius: 20 }}>
-          <h3>{title}</h3>
-          <p>{year}</p>
-        </div>
-      </Link>
-    </motion.div>
+    <div className="card">
+      <h3>{title}</h3>
+      <p><strong>{year}</strong></p>
+      <p>{description}</p>
+      <p style={{ fontSize: "14px", opacity: 0.7 }}>
+        <strong>Tech Stack:</strong> {tech}
+      </p>
+    </div>
   );
 }
